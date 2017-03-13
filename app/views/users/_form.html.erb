@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= simple_form_for @user do |f| %>
+      <%= f.input :email %>
+      <%= f.input :password %>
+      <%= f.input :password_confirmation %>
+      <%= f.input :first_name %>
+      <%= f.input :last_name %>
+      <%= f.input :phone %>
+      <%= f.input :notes, hint: "This is a great place to write when you're available to play"%>
+      <%= f.button :submit, class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
